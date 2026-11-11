@@ -1,0 +1,53 @@
+{
+    "name": "gunsnprices/gunsnprices",
+    "description": "Parse firearm and ammunition product titles: brand, model, caliber, magazine capacity, barrel length, rounds per box.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "firearms",
+        "guns",
+        "ammo",
+        "caliber",
+        "title-parsing",
+        "product-matching",
+        "ecommerce",
+        "php"
+    ],
+    "homepage": "https://gunsnprices.com",
+    "authors": [
+        {
+            "name": "GunsNPrices",
+            "email": "app@gunsnprices.com",
+            "homepage": "https://gunsnprices.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gunsnprices/gunsnprices-php/issues",
+        "source": "https://github.com/gunsnprices/gunsnprices-php",
+        "email": "app@gunsnprices.com"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "ext-pcre": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "GunsNPrices\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GunsNPrices\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

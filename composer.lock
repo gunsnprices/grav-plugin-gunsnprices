@@ -1,0 +1,83 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0f3bcde1fa121869e144e48924d38047",
+    "packages": [
+        {
+            "name": "gunsnprices/gunsnprices",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gunsnprices/gunsnprices-php.git",
+                "reference": "78d70755b091eaf3bd42ed539164438a99ccd870"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gunsnprices/gunsnprices-php/zipball/78d70755b091eaf3bd42ed539164438a99ccd870",
+                "reference": "78d70755b091eaf3bd42ed539164438a99ccd870",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GunsNPrices\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "GunsNPrices",
+                    "email": "app@gunsnprices.com",
+                    "homepage": "https://gunsnprices.com"
+                }
+            ],
+            "description": "Parse firearm and ammunition product titles: brand, model, caliber, magazine capacity, barrel length, rounds per box.",
+            "homepage": "https://gunsnprices.com",
+            "keywords": [
+                "ammo",
+                "caliber",
+                "ecommerce",
+                "firearms",
+                "guns",
+                "php",
+                "product-matching",
+                "title-parsing"
+            ],
+            "support": {
+                "email": "app@gunsnprices.com",
+                "issues": "https://github.com/gunsnprices/gunsnprices-php/issues",
+                "source": "https://github.com/gunsnprices/gunsnprices-php"
+            },
+            "time": "2026-11-10T12:26:10+00:00",
+            "published-time": "2026-11-10T12:29:33+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.4"
+    },
+    "platform-dev": {},
+    "platform-overrides": {
+        "php": "7.4.0"
+    },
+    "plugin-api-version": "2.11.0"
+}

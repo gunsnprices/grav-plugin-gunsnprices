@@ -1,0 +1,40 @@
+{
+    "name": "gunsnprices/grav-plugin-gunsnprices",
+    "type": "grav-plugin",
+    "description": "Grav plugin: Twig filters and shortcodes that read caliber, model, magazine capacity, barrel length and rounds per box from gun and ammo product titles, and show the cost per round.",
+    "keywords": ["grav", "plugin", "twig", "firearms", "ammunition", "caliber", "cost per round"],
+    "homepage": "https://github.com/gunsnprices/grav-plugin-gunsnprices",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GunsNPrices",
+            "email": "app@gunsnprices.com",
+            "homepage": "https://gunsnprices.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gunsnprices/grav-plugin-gunsnprices/issues",
+        "source": "https://github.com/gunsnprices/grav-plugin-gunsnprices",
+        "email": "app@gunsnprices.com"
+    },
+    "require": {
+        "php": ">=7.4",
+        "gunsnprices/gunsnprices": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grav\\Plugin\\GunsNPrices\\": "classes/"
+        },
+        "classmap": ["gunsnprices.php"]
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    }
+}

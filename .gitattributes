@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+# GPM installs the release archive of a tag: keep development files out of it.
+/tests            export-ignore
+/.gitattributes   export-ignore
+/.gitignore       export-ignore

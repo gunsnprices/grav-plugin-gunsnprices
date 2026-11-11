@@ -1,0 +1,78 @@
+name: GunsNPrices Firearm Specs
+slug: gunsnprices
+type: plugin
+version: 1.0.0
+description: Twig filters and shortcodes for gun and ammo product titles. Reads the caliber, model, magazine capacity, barrel length and rounds per box, and shows the cost per round. Uses the open source title parser of [GunsNPrices](https://gunsnprices.com). Works offline.
+icon: crosshairs
+author:
+  name: GunsNPrices
+  email: app@gunsnprices.com
+  url: https://gunsnprices.com
+homepage: https://gunsnprices.com
+docs: https://github.com/gunsnprices/grav-plugin-gunsnprices/blob/main/README.md
+bugs: https://github.com/gunsnprices/grav-plugin-gunsnprices/issues
+keywords: grav, plugin, twig, shortcode, firearms, guns, ammo, ammunition, caliber, cost per round, gunsnprices
+license: MIT
+
+compatibility:
+  grav: ['1.7', '2.0']
+
+dependencies:
+  - { name: grav, version: '>=1.7.0' }
+  - { name: php, version: '>=7.4.0' }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    barrel_length_unit:
+      type: select
+      label: PLUGIN_GUNSNPRICES.BARREL_LENGTH_UNIT
+      help: PLUGIN_GUNSNPRICES.BARREL_LENGTH_UNIT_HELP
+      default: in
+      options:
+        in: PLUGIN_GUNSNPRICES.UNIT_IN
+        cm: PLUGIN_GUNSNPRICES.UNIT_CM
+        mm: PLUGIN_GUNSNPRICES.UNIT_MM
+
+    cost_per_round_format:
+      type: select
+      label: PLUGIN_GUNSNPRICES.COST_FORMAT
+      help: PLUGIN_GUNSNPRICES.COST_FORMAT_HELP
+      default: long
+      options:
+        long: PLUGIN_GUNSNPRICES.COST_FORMAT_LONG
+        short: PLUGIN_GUNSNPRICES.COST_FORMAT_SHORT
+        amount: PLUGIN_GUNSNPRICES.COST_FORMAT_AMOUNT
+
+    currency_symbol:
+      type: text
+      label: PLUGIN_GUNSNPRICES.CURRENCY_SYMBOL
+      help: PLUGIN_GUNSNPRICES.CURRENCY_SYMBOL_HELP
+      default: '$'
+      size: x-small
+      validate:
+        type: text
+        max: 8
+
+    caliber_links:
+      type: toggle
+      label: PLUGIN_GUNSNPRICES.CALIBER_LINKS
+      help: PLUGIN_GUNSNPRICES.CALIBER_LINKS_HELP
+      highlight: 0
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool

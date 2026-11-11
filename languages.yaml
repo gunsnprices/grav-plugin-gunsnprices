@@ -1,0 +1,41 @@
+en:
+  PLUGIN_GUNSNPRICES:
+    BARREL_LENGTH_UNIT: Barrel length unit
+    BARREL_LENGTH_UNIT_HELP: The unit of barrel lengths in spec lists and in the barrel_length filter. The parser reads lengths in inches.
+    UNIT_IN: Inches (16.5 in)
+    UNIT_CM: Centimeters (41.9 cm)
+    UNIT_MM: Millimeters (419 mm)
+    COST_FORMAT: Cost per round format
+    COST_FORMAT_HELP: How the cost_per_round filter, the [cost-per-round] shortcode and spec lists show the cost of one round.
+    COST_FORMAT_LONG: Long ($0.38 per round)
+    COST_FORMAT_SHORT: Short ($0.38/rd)
+    COST_FORMAT_AMOUNT: Amount only ($0.38)
+    CURRENCY_SYMBOL: Currency symbol
+    CURRENCY_SYMBOL_HELP: Written before the cost per round.
+    CALIBER_LINKS: Link caliber names to GunsNPrices.com
+    CALIBER_LINKS_HELP: In spec lists, caliber names link to their price comparison pages on GunsNPrices.com, for example 9×19mm Parabellum links to gunsnprices.com/ammo/handgun-ammo/9-19mm-parabellum. These are links to an external site, so they are off unless you turn them on.
+
+    OUT_KIND: Type
+    OUT_BRAND: Brand
+    OUT_MODEL: Model
+    OUT_CALIBER: Caliber
+    OUT_CALIBER_TYPE: Caliber type
+    OUT_CAPACITY: Capacity
+    OUT_BARREL_LENGTH: Barrel length
+    OUT_ROUNDS: Rounds per box
+    OUT_COST_PER_ROUND: Cost per round
+    OUT_FIREARM: Firearm
+    OUT_AMMO: Ammunition
+    OUT_HANDGUN: Handgun
+    OUT_RIFLE: Rifle
+    OUT_RIMFIRE: Rimfire
+    OUT_SHOTGUN: Shotgun
+    OUT_AIRGUN: Airgun
+    OUT_MUZZLELOADER: Muzzleloader
+    OUT_ONE_ROUND: 1 round
+    OUT_N_ROUNDS: '{count} rounds'
+    OUT_PER_ROUND_LONG: '{cost} per round'
+    OUT_PER_ROUND_SHORT: '{cost}/rd'
+    OUT_UNIT_IN: '{length} in'
+    OUT_UNIT_CM: '{length} cm'
+    OUT_UNIT_MM: '{length} mm'

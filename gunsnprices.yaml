@@ -1,0 +1,5 @@
+enabled: true
+barrel_length_unit: in        # in, cm or mm
+cost_per_round_format: long   # long ("$0.38 per round"), short ("$0.38/rd") or amount ("$0.38")
+currency_symbol: '$'
+caliber_links: false          # link caliber names in spec lists to their GunsNPrices.com price pages
