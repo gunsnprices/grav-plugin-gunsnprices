@@ -24,7 +24,7 @@ server: the plugin makes no HTTP requests and has no tracking.
 ## Features
 
 - `firearm_specs` filter: a list of the specs found in a title (model, caliber, capacity, barrel length, rounds per
-  box, cost per round, and more on request).
+  box and cost per round; type, brand and caliber type with the `fields` option).
 - `cost_per_round` filter: "$0.38 per round", "$0.38/rd" or "$0.38", from a title or a round count and a price.
 - `caliber_name` filter: one name per cartridge. "9MM LUGER", "9x19" and "9mm Luger" all become "9×19mm Parabellum".
 - `barrel_length`, `magazine_capacity` and `rounds_per_box` filters for single values.
@@ -126,9 +126,10 @@ The fields are `kind`, `brand`, `model`, `caliber`, `caliber_type`, `capacity`, 
 title does not contain are left out, and a title with none of them gives an empty string.
 
 Options of `cost_per_round`: `format` (`long`, `short`, `amount`), `currency`, `decimals` (2 to 4, default 2) and
-`kind`. Only titles that read like ammunition (bullet weight, "ammo", "Box of 50", "20rds") get a cost per round, so
-a pistol with "15rd" in its title gets none. For short titles such as "Magtech 9mm 50rd", pass `{kind: 'ammo'}`.
-The price can be a number or a string such as "$1,049.99".
+`kind`. Only titles that read like ammunition (a bullet weight such as "115gr", "ammo", "Box of 50", "50/box") get a
+cost per round, so a pistol with "15rd" in its title gets none. For short titles such as "Magtech 9mm 50rd", pass
+`{kind: 'ammo'}`. The same rule decides the `ammo` test.
+The price can be a number or a string in US format such as "$1,049.99" (a comma is read as a thousands separator).
 
 ### Twig functions and test
 
